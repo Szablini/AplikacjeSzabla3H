@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    document.write("Witaj w kalkulatorze pola figury. ");
+    const litera = prompt("Podaj literę, aby wybrać działanie. ");
+    const a = parseInt(prompt("Podaj liczbę a: "));
+    const b = parseInt(prompt("Podaj liczbę b: "));
+    switch (litera) {
+    case "T":
+    const wynik1 = 0.5*a*b;
+    document.write("Wynik to: " + wynik1);
+	break;
+    case "K":
+    const wynik2 = a*a;
+    document.write("Wynik to: " + wynik2);
+	break;
+    case "P":
+    const wynik3 = a*b;
+    document.write("Wynik to: " + wynik3);
+	break;
+    default:
+    document.write("Podałeś zły znak.");
+}
+    </script>
+</body>
+</html>

@@ -1,6 +1,0 @@
-<form action="">
-        <input type="number" name="liczba1">
-        <input type="submit" value="Pokaż liczby: ">
-    </form>
-    
-    przed script

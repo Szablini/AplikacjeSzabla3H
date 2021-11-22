@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    document.write("Witaj w kalkulatorze. ");
+    const znak = prompt("Podaj znak, aby wybrać działanie. ");
+    const a = parseInt(prompt("Podaj liczbę a: "));
+    const b = parseInt(prompt("Podaj liczbę b: "));
+    switch (znak) {
+    case "+":
+    const wynik1 = a+b;
+    document.write("Wynik to: " + wynik1);
+	break;
+    case "-":
+    const wynik2 = a-b;
+    document.write("Wynik to: " + wynik2);
+	break;
+    case "*":
+    const wynik3 = a*b;
+    document.write("Wynik to: " + wynik3);
+	break;
+    case "/":
+	const wynik4 = a/b;
+    document.write("Wynik to: " + wynik4);
+	break;
+    default:
+    document.write("Podałeś zły znak.");
+}
+    </script>
+</body>
+</html>

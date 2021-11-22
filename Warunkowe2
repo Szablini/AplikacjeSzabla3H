@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+         const liczba = prompt("Podaj liczbe");
+         if(liczba>5 && liczba!=6 && liczba!=12 || liczba===0)
+        document.writeln("Twoja liczba spelnia wymagania");
+        else
+        document.writeln("Twoja liczba nie spelnia wymagań");
+    </script>
+</body>
+</html>

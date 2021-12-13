@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <form action="" method="post">
+        <input type="number" name='l1' placeholder="liczba 1"/>
+        <input type="number" name='l2' placeholder="liczba 2"/>
+        <input type="submit" value="oblicz">
+    </form>
+
+    <div class="wynik"></div>
+
+    <script>
+        const formularz = document.querySelector('form');
+        const divWynik = document.querySelector('.wynik');
+        const sumuj = function(a, b){
+            return `Suma liczb ${a} i ${b} wynosi: ${a + b}`;
+        };
+
+        
+
+        formularz.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const liczba1 = document.querySelector('input[name="l1"]').value * 1;
+            const liczba2 = document.querySelector('input[name="l2"]').value * 1;
+            divWynik.textContent = sumuj(liczba1, liczba2);
+
+        });
+
+    </script>
+</body>
+</html>

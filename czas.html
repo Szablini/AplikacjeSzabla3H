@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="zegarek"></div>
+    
+    <script>
+        const divZ = document.querySelector('.zegarek');
+        const zegarek = function ()
+        {
+        const czas = new Date(); 
+        let godzina = czas.getHours();
+        let minuta = czas.getMinutes();
+        let sekunda = czas.getSeconds();
+
+        if(godzina < 10) godzina = '0' + godzina;
+        if(minuta < 10) minuta = '0' + minuta;
+        if(sekunda < 10) sekunda = '0' + sekunda;
+
+        // wyświetlamy w divie czas
+        // divZ.textContent = godzina + ':' + minuta + ':' + sekunda;
+        divZ.textContent = `${godzina}:${minuta}:${sekunda}`;
+        }
+        // setTimeout(nazwaFunkcji, czas) - wywołuje funkcję nazwaFunkcji po czasie czas /w ms/
+        // setInterval(nazwaFunkcji, czas) - wywołuje funkcję nazwaFunkcji co podany czas /w ms/
+        zegarek();
+        setInterval (zegarek, 1000);
+    </script>
+
+</body>
+</html>

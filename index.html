@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Przykład programowania w paradygmacie obiektowym</h1>
+    
+    <script src="Samochod.js"></script>
+    <script src="Komis.js"></script>
+    <script>
+        const divW = document.querySelector('div.wynik')
+        // kod naszego skrypu, który będzie korzystał z klasy Samochod
+        // tworzymy obiekt na podstawie klasy Samochod
+        const hondaJazz = new Samochod('Honda', 'Jazz', 12000, 2008, 8);
+        const kiaCeed = new Samochod('KIA', 'Ceed', 18000, 2012, 6);
+
+        const autex = new Komis ('Autex'); // utworzyłem komis
+        // dodajemy auta
+        autex.dodajSamochod(hondaJazz);
+        autex.dodajSamochod(kiaCeed);
+        div.innerHTML= autex.wyswietlSamochody();
+
+        // console.log ('Wiek hondy to: ' + hondaJazz.wiek() + 'lat');
+        // console.log ('Wiek kia to: ' + kiaCeed.wiek() + 'lat');
+        // divW.innerHTML = 
+        // Wiek hondy to: ${hondaJazz.wiek()} lat <br>
+        // Wiek kia to: ${kiaCeed.wiek()} lat.
+    </script>
+</body>
+</html>

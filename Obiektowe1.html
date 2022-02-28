@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Przykład programowania w paradygmacie obiektowym</h1>
+    
+    <script src="Samochod.js"></script>
+    <script>
+        // kod naszego skrypu, który będzie korzystał z klasy Samochod
+        // tworzymy obiekt na podstawie klasy Samochod
+        const hondaJazz = new Samochod('Honda', 'Jazz', 12000, 2008, 8);
+        console.log(hondaJazz.marka);
+        console.log(hondaJazz.model);
+        console.log(hondaJazz.cena);
+        console.log(hondaJazz.rocznik);
+        console.log(hondaJazz.spalanie);
+
+        const kiaCeed = new Samochod('KIA', 'Ceed', 18000, 2012, 6)
+        console.log(kiaCeed.marka);
+        console.log(kiaCeed.model);
+        console.log(kiaCeed.cena);
+        console.log(kiaCeed.rocznik);
+        console.log(kiaCeed.spalanie);
+
+    </script>
+</body>
+</html>
+
+class Samochod
+{
+    constructor(marka, model, cena, rocznik, spalanie){
+// tworzymy właściwości
+    this.marka = marka;
+    this.model = model;
+    this.cena = cena;
+    this.rocznik = rocznik;
+    this.spalanie = spalanie;
+    }
+// metody
+wiek()
+{
+const data = new Date();
+const rok = data.getFullYear(); // pobieramy aktualny rok
+return rok - this.rocznik;
+}
+
+    
+}

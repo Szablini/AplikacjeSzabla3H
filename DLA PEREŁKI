@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .naglowek {
+        background-color: green;
+    }
+    .diw
+    {
+        background-color: blue;
+    }
+
+    .akapit1
+    {
+        background-color: red;
+    }
+
+    .akapit2
+    {
+        background-color: yellow;
+    }
+</style>
+<body>
+<h1 class="naglowek">Olga lubi koty.</h1>
+<div class="diw" >Artur lubi kota Olgi. </div>
+<p class="akapit1">Robert lubi jeździć na rowerze Olgi. </p>
+<p class="akapit2">Ewelina lubi jeść pączki, które robi Olga.</p>
+
+<script>
+// ZADANIE 1
+// pobieramy akapit1
+const p1 = document.querySelector('p.akapit1')
+// dodajemy nową treść do akapitu1
+p1.innerHTML += 'Robert mówi: "Bardzo lubię się uczyć JavaScript".';
+
+// ZADANIE 2
+// pobieramy nagłówek
+const naglowekH1 = document.querySelector('h1.naglowek')
+naglowekH1.textContent = 'Olga lubi bawić się z kotami...';
+</script>
+
+</body>
+</html>

@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <style>
+
+    body
+    {
+        font-family: Arial;
+    }
     .naglowek {
         background-color: green;
     }
@@ -28,7 +33,7 @@
 <h1 class="naglowek">Olga lubi koty.</h1>
 <div class="diw" >Artur lubi kota Olgi. </div>
 <p class="akapit1">Robert lubi jeździć na rowerze Olgi. </p>
-<p class="akapit2">Ewelina lubi jeść pączki, które robi Olga.</p>
+<p class="akapit2">Ewelina lubi jeść pączki, które robi Olga. </p>
 
 <script>
 // ZADANIE 1
@@ -40,7 +45,16 @@ p1.innerHTML += 'Robert mówi: "Bardzo lubię się uczyć JavaScript".';
 // ZADANIE 2
 // pobieramy nagłówek
 const naglowekH1 = document.querySelector('h1.naglowek')
+// podmieniamy zawartosc nagłówka
 naglowekH1.textContent = 'Olga lubi bawić się z kotami...';
+
+// ZADANIE 3
+// pobieramy diva
+const divW = document.querySelector('div.diw');
+// zmieniamy styl diva
+divW.style.fontFamily = 'Courier New';
+divW.style.background = 'orange';
+
 </script>
 
 </body>

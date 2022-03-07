@@ -62,6 +62,18 @@ const divW = document.querySelector('div.diw');
 divW.style.fontFamily = 'Courier New';
 // divW.style.background = 'orange';
 divW.classList.add('zmiana');
+
+// ZADANIE 4
+// tworzymy nowy element h2
+const nowyNaglowek = document.createElement('h2');
+// dodajemy tresc do nagłówka h2
+nowyNaglowek.textContent = 'Pies Artura jest fajny';
+// wstawiamy na stronę utworzony nagłówek
+document.querySelector('p.akapit2').appendChild(nowyNaglowek);
+
+// ZADANIE 5
+// usuwamy akapit1
+p1.remove();
 </script>
 
 </body>

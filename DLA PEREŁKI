@@ -28,6 +28,13 @@
     {
         background-color: yellow;
     }
+
+    .zmiana
+    {
+        font-size: 30px;
+        background-color: black;
+        color: white;
+    }
 </style>
 <body>
 <h1 class="naglowek">Olga lubi koty.</h1>
@@ -53,8 +60,8 @@ naglowekH1.textContent = 'Olga lubi bawić się z kotami...';
 const divW = document.querySelector('div.diw');
 // zmieniamy styl diva
 divW.style.fontFamily = 'Courier New';
-divW.style.background = 'orange';
-
+// divW.style.background = 'orange';
+divW.classList.add('zmiana');
 </script>
 
 </body>

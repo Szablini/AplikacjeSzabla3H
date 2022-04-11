@@ -9,6 +9,7 @@
 <body>
 <h2> Współrzędna X kursora myszy: </h2>
 <h2> Współrzędna Y kursora myszy: </h2>
+<h2> Naciśnięto klawisz: </h2>
 <script>
     // pobieramy od razu wszystkie naglowki h2
     const naglowki = document.querySelectorAll('h2');
@@ -21,6 +22,10 @@
     // do nagłówków dodajemy odpowiednią zawartość
     naglowki[0].textContent = 'Współrzędna X kursora myszy: ' + event.clientX;
     naglowki[1].textContent = 'Współrzędna Y kursora myszy: ' + event.clientY;
+    // obsługujemy naciskanie klawiszy
+    document.addEventListener('keydown', function(event){
+    naglowki[2].textContent = 'Naciśnięto klawisz: ' + event.key;
+    })
 })
 </script>
 </body>

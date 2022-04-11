@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   p
+    {
+        background-color: black;
+        color: white;
+        padding: 20px;
+    }
+
+    .zmiana
+    {
+        background-color: orange;
+        color: blue;
+    }
+</style>
+<body>
+<p class="akapit">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et consequat metus. Donec vitae eros id neque lobortis commodo. Ut molestie risus in ultrices fermentum. Nunc nec facilisis augue. Sed tortor nisi, auctor eu mauris id, tincidunt dapibus mauris. Suspendisse pellentesque nisl volutpat arcu gravida efficitur. Nam non augue a massa rutrum fringilla sed vel eros. Nulla ullamcorper risus massa, eget molestie ipsum placerat vitae. Quisque vitae nisl nec risus elementum malesuada et vel risus. 
+</p>
+<script>
+const akapit = document.querySelector('p.akapit');
+akapit.addEventListener('mouseover', function(){
+// zmieniamy kolor tła akapitu
+// akapit.style.backgroundColor = 'green';
+// do akapitu dodajemy klasę zmiana
+akapit.classList.add('zmiana');
+})
+// przypisujemy obsługę zdarzenia zjechania kursorem myszy z
+akapit.addEventListener('mouseout', function(){
+// akapit.style.backgroundColor = 'black';        
+// usuwamy klasę zmiana z akapitu
+akapit.classList.remove('zmiana');                                                                                                                                                                                                                        
+})
+
+// przypisujemy obsługę zdarzenia klikania na akapit
+akapit.addEventListener('click', function(){
+    akapit.textContent = 'Morbi congue eget massa sed feugiat. Aliquam erat volutpat. Pellentesque sagittis luctus lectus, ac pretium sapien tincidunt a. Sed malesuada nunc eget erat accumsan euismod. Nullam aliquam nunc ut ex pulvinar, vitae consectetur est pretium. Morbi rhoncus efficitur ligula, non vulputate ante blandit pellentesque. Aenean eleifend in mi quis porta.'
+});
+
+</script>
+</body>
+</html>

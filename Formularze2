@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+
+    <input type="text" name="poletekstowe" size="20">
+    <input type="button" name="guzik">
+
+    </form>
+
+    <div>
+
+    </div>
+
+    <script>
+
+    let div1 = document.querySelector('div');
+    let poletekstowe = document.querySelector('input[name="poletekstowe"]');
+    let guzik = document.querySelector('input[name="guzik"]');
+
+    guzik.addEventListener('click', function(e)
+    {
+        div1.textContent += poletekstowe.value;
+    });
+
+    </script>
+
+</body>
+</html>

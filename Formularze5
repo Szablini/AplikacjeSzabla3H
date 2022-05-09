@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+            margin: 10px 0;
+        }
+        label {
+            display: block;
+            width: 160px;
+        }
+        input[type='submit']{
+            margin: 0 20px;
+        }
+        div.dane 
+        {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post" novalidate>
+        <div> 
+        <label for="imie"> Podaj imię: </label>
+        <input type="text" name="imie" id="imie" />
+        </div>
+        <div>
+        <label for="nazwisko"> Podaj nazwisko: </label>
+        <input type="text" name="nazwisko" id="nazwisko" />
+        </div>
+        <div>
+        <label for="telefon"> Podaj numer telefonu: </label>
+        <input type="text" name="telefon" id="telefon" />
+        </div>
+        <div>
+        <label for="email"> Podaj adres e-mail: </label>
+        <input type="text" name="email" id="email" />
+        </div>
+        <div>
+        <input type="reset" value="Wyczyść formularz">
+        <input type="submit" value="Wyślij formularz">
+        </div>
+    </form>
+
+    <div class="dane">Tutaj będą dane z formularza.</div>
+
+    <script>
+    // pobieramy wszystkie pola formularza (bez reset i wyślij) oraz div o klasie dane
+    const formularz = document.querySelector('form');
+    const imiePole = document.querySelector('input[name="imie"]');
+    const nazwiskoPole = document.querySelector('input[name="nazwisko"]');
+    const telefonPole = document.querySelector('input[name="telefon"]');
+    const emailPole = document.querySelector('input[name="email"]');
+    const divDane = document.querySelector('div.dane');
+
+    // obsluga zdarzenia submit na formularzu
+    formularz.addEventListener('submit', function(e){
+    // poniższy kod wykona się kiedy wciśniemy przycisk wyślij
+    e.preventDefault();
+
+    // pobieramy wartości poszczególnych pól formularza
+    const imie = imiePole.value;
+    const nazwisko = nazwiskoPole.value;
+    const telefon = telefonPole.value;
+    const email = emailPole.value;
+
+    // sprawdzamy czy wszystkie pola są uzupełnione
+    if(imie == '' || nazwisko == '' || telefon == '' || email == '') {
+        divDane.innerHTML = '<h3>Uzupełnij wszystkie pola!</h3>';
+
+    }
+
+    else
+
+    {
+   // wywświetlamy wartości pól w divie
+   divDane.innerHTML = `
+    <h2> Dane formularza: </h2>
+    <p> Imię: ${imie}</p>
+    <p> Nazwisko: ${nazwisko}</p>
+    <p> Telefon: ${telefon}</p>
+    <p> Email: ${email}</p>
+    `;
+    }
+
+    });
+    </script>
+</body>
+</html>

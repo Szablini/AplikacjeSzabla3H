@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<style>
+    .zmiana
+    {
+        background-color: blue !important;
+        color: yellow !important;
+    }
+</style>
+</head>
+<body>
+    <h1> Nagłówek </h1>
+    <h1> Nagłówek </h1> 
+    <script>
+        // pobieramy h1 i zmieniamy jego zawartość
+        const naglowek = $('h1:first')
+        // console.log(naglowek);
+        // $('h1').html('Nowa treść nagłówka');
+        naglowek.text('Nowa treść');
+        naglowek.css('color', 'red');
+        naglowek.css({
+            // zmieniamy kilka styli css
+            backgroundColor: 'black',
+            color: 'white',
+        });
+
+        naglowek.on('mouseover', function()
+        {
+            naglowek.addClass('zmiana');
+        })
+
+        naglowek.on('mouseout', function()
+        {
+        naglowek.removeClass('zmiana');
+        })
+        // document.querySelector('h1').innerHTML = 'Treść z JavaScriptu';
+
+    </script>
+</body>
+</html>

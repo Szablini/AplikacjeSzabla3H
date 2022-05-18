@@ -13,12 +13,12 @@
          {
             if (x>=1 && x<=100)
             {
-               alert("true");
+               return("true");
             }
 
             else
             {
-                alert("false");
+               return("false");
             }
          }
 

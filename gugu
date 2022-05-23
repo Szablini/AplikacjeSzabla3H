@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div> Wybierz okazję:
+        <form>
+            Zaproszenie na imieniny
+            <input type="radio" value="1" name="kartka"/> <br>
+            Zaproszenie na urodziny
+            <input type="radio" value="2" name="kartka"/> <br>
+            Zaproszenie na rocznicę
+            <input type="radio" value="3" name="kartka"/> <br>
+        </form>
+    </div>
+    <div class="wynik"></div>
+
+    <div> Wpisz dane osobowe:
+        <form action="" method="post">
+            Imię osoby zapraszanej: 
+            <input type="text" name="imie"> <br>
+            Nazwisko osoby zapraszanej: 
+            <input type="text" name="nazwisko"> <br>
+        </form>
+    </div>
+
+    <div>
+        <form action="" method="post">
+            Uzupełnij treść zaproszenia:
+            <input type="text" name="tresc" size="100" maxlengtth=>
+        </form>
+    </div>
+
+    <div> Wybierz kolor tekstu:
+        <form action="" method="post">
+            Niebieski
+            <input type="radio" value="1" name="kolortekstu"> <br>
+            Żółty
+            <input type="radio" value="2" name="kolortekstu"> <br>
+            Czarny
+            <input type="radio" value="3" name="kolortekstu"> <br>
+        </form>
+    </div>
+
+    <div> Wybierz kolor tła:
+        <form action="" mła="post">
+            Białe
+            <input type="radio" value="1" name="kolortla"> <br>
+            Brązowe
+            <input type="radio" value="2" name="kolortla"> <br>
+            Szare
+            <input type="radio" value="3" name="kolortla"> <br>
+        </form>
+    </div>
+
+    <div> Wybierz czcionkę:
+        <form action="" method="post">
+            Verdana
+            <input type="radio" value="1" name="czcionka"> <br>
+            Helmetica
+            <input type="radio" value="2" name="czcionka"> <br>
+            Arial
+            <input type="radio" value="3" name="czcionka"> <br>
+        </form>
+    </div>
+
+    <div>
+        <form action="">
+            <button type="submit">Wyślij formularz</button>
+        </form>
+    </div>
+<div class="wynikzaproszenia">
+
+       <script>
+
+        const formularz = document.querySelector('form');
+        const kartkaa = document.querySelector('div.wynikzaproszenia')
+
+        formularz.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const imie = document.querySelector('input[name="imie"]');
+            const nazwisko = document.querySelector('input[name="nazwisko"]');
+            const tresc = document.querySelector('input[name="tresc"]');
+            const kartka = document.querySelector('input[name="kartka"]');
+            const kolortekstu = document.querySelector('input[name="kolortekstu"]');
+            const kolortla = document.querySelector('input[name="kolortla"]');
+            const czcionka = document.querySelector('input[name="czcionka"]');
+            
+</div>
+
+  
+</script> 
+
+</body>
+</html>

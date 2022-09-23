@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div>200px</div>
+            <div>600px</div>
+            <div>200px</div>
+        </header>
+        <section class="first">
+            <div>700px</div>
+            <div>300px</div>
+        </section>
+        <nav>
+            <ul class="navigation">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </nav>
+        <section class="second">
+            <div>200px</div>
+            <div class="right">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+        <section class="three">
+            <ul class="navigation-left">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+            <div>800px</div>
+        </section>
+        <section class="four">
+            <div>50%</div>
+            <div>50%</div>
+        </section>
+        <section class="five">
+            <div>25%</div>
+            <div>25%</div>
+            <div>25%</div>
+            <div>25%</div>
+        </section>
+        <footer>1000px</footer>
+    </div>
+</body>
+</html>
+
+/// CSS
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+header,nav,section{
+    margin-bottom: 10px;
+}
+
+.wrapper{
+    border: 2px solid black;
+    margin: 0 auto;
+    width: 1020px;
+    padding: 5px 10px;
+    overflow: hidden;
+}
+
+div,
+li,
+.three{
+    border: 2px solid black;
+}
+
+header{
+    height: 150px;
+    width: 1000px;
+
+    display: grid;
+    grid-template-columns: 200px 600px 200px;
+}
+
+.first{
+    height: 200px;
+    display: grid;
+    grid-template-columns: 700px 300px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.navigation{
+    width: 1000px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+.navigation li{
+    margin: 15px;
+}
+
+.second{
+    height: 150px;
+    display: grid;
+    grid-template-columns: 200px 800px;
+}
+
+.right{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.right div{
+    margin: 10px;
+}
+
+.three{
+    display: grid;
+    grid-template-columns: 200px 800px;
+}
+
+.navigation-left{
+    border-right: 2px solid black;
+}
+
+.navigation-left li{
+    margin: 10px;
+}
+
+.three div{
+    margin: 10px;
+}
+
+.four{
+    border: 2px solid black;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.four div{
+    margin: 10px;
+}
+
+.five{
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+footer{
+    border: 2px solid black;
+    height: 30px;
+}

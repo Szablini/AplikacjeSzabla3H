@@ -1,0 +1,189 @@
+// CSS
+
+header
+{
+    height: 125px;
+    background-color: cornflowerblue;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+.raz
+{
+    height: 175px;
+    background-color: coral;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+.dwa
+{
+    height: 150px;
+    background-color: crimson;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+.trzy
+{
+    height: 300px;
+    display: grid;
+    grid-template-columns: 700px 300px;
+    background-color: olivedrab;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+.cztery
+{
+    height: 150px;
+    background-color: crimson;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+ol
+{
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+ol a 
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+li
+{
+    float: left;
+}
+
+ol > li
+{
+    float: left;
+    width: 160px;
+    height: 40px;
+    border-left: 1px solid grey;
+}
+
+ol > li:last-child
+{
+    border-right: 1px solid grey;
+}
+
+ol > li:hover
+{
+    background-color: darkkhaki;
+}
+
+ol > li:hover > a
+{
+    color: red;
+}
+
+ol > li > ul
+{
+    list-style-type: none;
+    height: 40px;
+    display: none;
+}
+
+ol > li:hover > ul
+{
+    display: block;
+}
+
+ol > li > ul > li
+{
+    background-color: hotpink;
+    border-top: 1px solid grey;
+    position: relative;
+    z-index: 100;
+}
+
+ol > li > ul > li:hover
+{
+    background-color: indigo;
+}
+
+ol > li > ul > li:hover > a
+{
+    color: yellowgreen;
+}
+
+// HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div></div>
+        </header>
+        <section class="raz">
+            <div></div>
+        </section>
+        <section class="dwa">
+            <div>  
+                <ol>
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">Serwis</a>
+                <ul>
+                    <li><a href="#">komputerów</a></li>
+                    <li><a href="#">laptopów</a></li>
+                    <li><a href="#">telefonów</a></li>
+                    <li><a href="#">tabletów</a></li>
+                    <li><a href="#">smartfonów</a></li>
+                </ul>
+                </li>
+                <li> <a href="#">Systemy</a>
+                <ul>
+                <li> <a href="#">Linux</a></li>
+                <li> <a href="#">Windows</a></li>
+                <li> <a href="#">iOS</a></li>
+                <li> <a href="#">Android</a></li>
+                </ul>
+                </li>
+                <li> <a href="#">Cennik</a>
+                <ul>
+                <li> <a href="#">komputerów</a></li>
+                <li> <a href="#">tabletów</a></li>
+                <li> <a href="#">smartfonów</a></li>
+                <li> <a href="#">laptopów</a></li>
+                </ul>
+                </li>
+                <li> <a href="#">O firmie</a>
+                <ul>
+                <li> <a href="#">zarząd</a></li>
+                <li> <a href="#">udziałowy</a></li>
+                <li> <a href="#">dla pracy</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Kontakt</a>
+                <ul>
+                <li> <a href="#">dojazd</a><li>
+                <li> <a href="#">formularz</a></li>
+                <li> <a href="#">dane teleadresowe</a></li>
+                </ol>
+            </div> 
+        </section>
+        <section class="trzy">
+            <div></div>
+            <div></div> 
+        </section>
+        <section class="cztery">
+            <div></div> 
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/ CSS
+
+header
+{
+    height: 100px;
+    background-color: cornflowerblue;
+    margin-bottom: 10px;
+}
+
+.raz
+{
+    height: 125px;
+    background-color: coral;
+    margin-bottom: 10px;
+}
+
+.dwa
+{
+    height: 20px;
+    background-color: crimson;
+    margin-bottom: 10px;
+}
+
+.trzy
+{
+    height: 250px;
+    display: grid;
+    grid-template-columns: 700px 300px;
+    background-color: olivedrab;
+    margin-bottom: 10px;
+}
+
+.cztery
+{
+    height: 20px;
+    background-color: crimson;
+    margin-bottom: 10px;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div></div>
+        </header>
+        <section class="raz">
+            <div></div>
+        </section>
+        <section class="dwa">
+            <div>  
+                <ol>
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">Serwis</a>
+                <ul>
+                    <li><a href="#">komputerów</a></li>
+                    <li><a href="#">laptopów</a></li>
+                    <li><a href="#">telefonów</a></li>
+                    <li><a href="#">tabletów</a></li>
+                    <li><a href="#">smartfonów</a></li>
+                </ul>
+                </li>
+                </ol>
+                <li> <a href="#">Systemy</a>
+                <ul>
+                <li> <a href="#">Linux</a></li>
+                <li> <a href="#">Windows</a></li>
+                <li> <a href="#">iOS</a></li>
+                <li> <a href="#">Android</a></li>
+                </ul>
+                </li>
+                <li> <a href="#">Cennik</a>
+                <ul>
+                <li> <a href="#">komputerów</a></li>
+                <li> <a href="#">tabletów</a></li>
+                <li> <a href="#">smartfonów</a></li>
+                <li> <a href="#">laptopów</a></li>
+                </ul>
+                </li>
+                <li> <a href="#">O firmie</a>
+                <ul>
+                <li> <a href="#">zarząd</a></li>
+                <li> <a href="#">udziałowy</a></li>
+                <li> <a href="#">dla pracy</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Kontakt</a>
+                <ul>
+                <li> <a href="#">dojazd</a><li>
+                <li> <a href="#">formularz</a></li>
+                <li> <a href="#">dane teleadresowe</a></li>
+            
+            </div> 
+        </section>
+        <section class="trzy">
+            <div></div>
+            <div></div> 
+        </section>
+        <section class="cztery">
+            <div></div> 
+        </section>
+    </div>
+</body>
+</html>
